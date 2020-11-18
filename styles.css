@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: monospace;
+    color: #916386;
+    background: #b19eac;
+    background-image: url(https://placeimg.com/640/480/nature);
+}
+
+a {
+    text-decoration: #a0283c;
+}
+
+a:hover {
+    color: #f5d6ee;
+}
+
+.main-nav {
+    display: flex;
+    background: #D56A48;
+    justify-content: space-around;
+    font-weight: 100;
+    list-style-type: 0;
+    margin: auto;
+    padding: 10px 10px 10px;
+
+}
+
+.main-text {
+    color: purple;
+    padding: 300px 300px 290px;
+}
+//.paragraph1 {
+    padding: 10px 20px 10px;
+}
+
+footer {
+    width: auto;
+    min-height: 50px;
+    padding: 80px 10px 50px;
+    color: #916386;
+    background: white;
+    
