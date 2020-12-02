@@ -1,15 +1,14 @@
+/* ------ Base Element Styles ------ */
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
     font-family: monospace;
-    color: #916386;
+    margin: 0;
+    text-align: center;
     background: #b19eac;
-    background-image: url(https://placeimg.com/640/480/nature);
 }
 
 a {
@@ -17,25 +16,50 @@ a {
 }
 
 a:hover {
-    color: #f5d6ee;
+    color: hsl(193, 50%, 77%);
 }
 
+.footer-paragraph {
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* ----- Base Layout Styles ------ */
+
 .main-nav {
-    display: flex;
-    background: #D56A48;
-    justify-content: space-around;
-    font-weight: 100;
-    list-style-type: 0;
+    background-color: rgba(61, 199, 187, 0.3);
+    font-weight: 200;
     margin: auto;
     padding: 10px 10px 10px;
 
 }
 
+body {
+    background-image: url(backgroundImage.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.nav {
+    list-style: none;
+    justify-content: space-around;
+}
+
+
 .main-text {
-    color: purple;
+    color: black;
     padding: 300px 300px 290px;
 }
-//.paragraph1 {
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph1 {
     padding: 10px 20px 10px;
 }
 
@@ -43,6 +67,36 @@ footer {
     width: auto;
     min-height: 50px;
     padding: 80px 10px 50px;
-    color: #916386;
+    color: rgb(22, 163, 121);
     background: white;
+}
     
+/* =====================================
+   Media Queries
+======================================
+@media (min-width: 769px) {
+    .main-nav,
+    .nav {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1025px) {
+    .main-nav, 
+    .nav {
+        width: 80%;
+        max-width: 2150px;
+    }
+}
+*/
+
+@media (min-width:769px) {
+    .main-nav 
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+   
+}
